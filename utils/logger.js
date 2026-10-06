@@ -1,0 +1,38 @@
+const fs = require('fs').promises;
+const path = require('path');
+const EventEmitter = require('node:events');
+
+const logger = new EventEmitter;
+
+const logDir = path.join(__dirname, '..', 'logs');
+const logFilePath = path.join(logDir, 'logs.log');
+
+
+
+async function initLogger() {
+    try {
+        await fs.mkdir(logDir, { recursive: true });
+    } catch (error) {
+        console.error('Kunne ikke oprette logmappe:', error);
+    }
+}
+
+async function logEvent(message) {
+    const datestamp = new Date().toLocaleDateString('da-DK');
+    const timestamp = new Date().toLocaleTimeString('da-DK');
+    const logMessage = `${datestamp} : ${timestamp} - ${message}\n`;
+
+    try {
+        await fs.appendFile(logFilePath, logMessage);
+    } catch (err) {
+        console.error('Fejl ved logning:', err);
+    }
+}
+
+logger.on('log', async (method, url, status, info ) => {
+    const message = `[${status}] ${method} ${url} - ${info}`;
+    logEvent(message);
+});
+
+module.exports = { initLogger, logger };
+
