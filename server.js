@@ -5,8 +5,6 @@ app.use(express.json());
 const standardRouter = require("./routes/standard")
 
 const { logger } = require("./utils/logger");
-const fs = require('fs').promises;
-const path = require('path');
 
 
 const PORT = process.env.PORT || 3000;
