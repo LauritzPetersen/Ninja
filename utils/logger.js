@@ -9,13 +9,6 @@ const logFilePath = path.join(logDir, 'logs.log');
 
 
 
-async function initLogger() {
-    try {
-        await fs.mkdir(logDir, { recursive: true });
-    } catch (error) {
-        console.error('Kunne ikke oprette logmappe:', error);
-    }
-}
 
 async function logEvent(message) {
     const datestamp = new Date().toLocaleDateString('da-DK');
@@ -31,8 +24,14 @@ async function logEvent(message) {
 
 logger.on('log', async (method, url, status, info ) => {
     const message = `[${status}] ${method} ${url} - ${info}`;
-    logEvent(message);
+    await logEvent(message);
 });
 
-module.exports = { initLogger, logger };
+logger.on('start', async (message) => {
+    await logEvent(message);
+});
+
+
+
+module.exports = { logger };
 

@@ -6,3 +6,5 @@ router.get("/read-file", fileController.readFile);
 router.post("/write-file", fileController.writeFile);
 
 
+
+module.exports = router;

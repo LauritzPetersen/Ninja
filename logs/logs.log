@@ -1,0 +1,30 @@
+6.10.2026 : 12.04.01 - Server startede
+6.10.2026 : 12.04.36 - [500] GET /read-file - Filen blev ikke læst
+6.10.2026 : 12.06.42 - Server startede
+6.10.2026 : 12.06.51 - [500] GET /read-file - Filen blev ikke læst
+6.10.2026 : 12.08.50 - Server startede
+6.10.2026 : 12.08.53 - [500] GET /read-file - Filen blev ikke læst
+6.10.2026 : 12.09.50 - Server startede
+6.10.2026 : 12.09.53 - [200] GET /read-file - Filen blev læst
+6.10.2026 : 12.12.06 - [Error] POST /write-file - Kunne ikke skrive til filen
+6.10.2026 : 12.12.26 - Server startede
+6.10.2026 : 12.12.29 - [Error] POST /write-file - Kunne ikke skrive til filen
+6.10.2026 : 12.13.20 - Server startede
+6.10.2026 : 12.13.48 - [200] GET /read-file - Filen blev læst
+6.10.2026 : 12.14.46 - Server startede
+6.10.2026 : 12.14.58 - [200] GET /read-file - Filen blev læst
+6.10.2026 : 12.20.35 - Server startede
+6.10.2026 : 12.20.39 - Server startede
+6.10.2026 : 12.20.50 - [200] GET /read-file - Filen blev læst
+6.10.2026 : 12.21.29 - Server startede
+6.10.2026 : 12.21.32 - [200] GET /read-file - Filen blev læst
+6.10.2026 : 12.21.35 - [200] GET /read-file - Filen blev læst
+6.10.2026 : 12.22.15 - Server startede
+6.10.2026 : 12.22.18 - [500] GET /read-file - Filen blev ikke læst Error: ENOENT: no such file or directory, open 'C:\Users\Matia\IdeaProjects\Node\Ninja\data\text.txt'
+6.10.2026 : 12.24.02 - Server startede
+6.10.2026 : 12.24.08 - [200] GET /read-file - Filen blev læst
+6.10.2026 : 12.24.14 - Server startede
+6.10.2026 : 12.24.17 - [500] GET /read-file - Filen blev ikke læst Error: ENOENT: no such file or directory, open 'C:\Users\Matia\IdeaProjects\Node\Ninja\data\text.txt'
+6.10.2026 : 12.27.18 - Server startede
+6.10.2026 : 12.28.42 - Server startede
+6.10.2026 : 12.28.53 - [Warning] POST /write-file - Mangler text i requesten
