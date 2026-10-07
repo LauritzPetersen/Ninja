@@ -90,4 +90,8 @@
 #### Vi har valgt ikke at bruge agent til kodning af dette projekt, da vi gerne selv ville have helt kontrol over udviklingen, da det stadig er lidt nyt.
 
 
+# Afslutning
+
+#### Den vigtigste forskel mellem den måde, vi håndterede samtidighed på i vores Java-server, og den måde Node.js-serveren arbejder på, er at i en Java-server arbejder man med flere tråde samtidigt, mens at i node.js gør vi brug af asynkronitet. 
+
 
