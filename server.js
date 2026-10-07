@@ -13,7 +13,7 @@ app.use("", standardRouter);
 
 // Get '/' message, to see if HTML is running
 app.get('/', (req, res) => {
-    res.json({message: "Backend is running"});
+    res.json({message: "Backend is now running"});
 });
 
 app.listen(PORT, () => {
